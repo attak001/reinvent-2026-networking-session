@@ -1,95 +1,61 @@
-# Building the Foundation for a Multi-Region Global Betting Platform
+# AWS Cloud WAN blog posts
 
-### Companion resources for the re:Invent 2026 networking session
+Posts from the [AWS Networking & Content Delivery Blog](https://aws.amazon.com/blogs/networking-and-content-delivery/) tagged or categorized as AWS Cloud WAN, newest first.
 
-> 📱 **Got here from the QR code?** Welcome! This repository collects the documentation, blog posts, workshops and code samples behind the session, so you can go further after the talk.
+Sources: [tag page](https://aws.amazon.com/blogs/networking-and-content-delivery/tag/aws-cloud-wan/), [category page](https://aws.amazon.com/blogs/networking-and-content-delivery/category/networking-content-delivery/aws-cloud-wan/). 53 posts.
 
-**Speakers**
-
-| | |
+| Date | Title |
 |---|---|
-| **Kenneth Attard** | Enterprise Architect, Betsson Group |
-| **Dimitrios Papageorgiou** | Senior Specialist Solutions Architect, Betting & Gaming, AWS |
-
----
-
-## 🎯 Purpose
-
-Betsson Group runs many brands, holds licences in 22 jurisdictions and serves customers in LatAm, CEECA, the Nordics and Western Europe. Supporting that footprint required a global network that is **secure, scalable and quick to extend into new regions**.
-
-The session covers Betsson's AWS networking journey:
-
-1. **Before 2019**: ad-hoc connectivity with IPsec over the internet, VPC peering, a single region, static routing and no infrastructure as code
-2. **Phase 1 (2021–2022)**: a hub-and-spoke **AWS Transit Gateway** network built with IaC and connected to the Betsson Backbone over **AWS Direct Connect**
-3. **Migration to AWS Cloud WAN (2023)**: segmentation, full-mesh routing and centralized policy, migrated with zero downtime
-4. **Phase 2 (2024)**: optimized hybrid connectivity
-5. **Phase 3 (Q4 2024 onward)**: security and observability using **AWS Network Firewall** and **Amazon Route 53 Resolver DNS Firewall**, with egress and east/west inspection
-
-This repository holds the reading list that goes with the session.
-
----
-
-## 📂 Repository structure
-
-```
-reinvent-2026-networking-session/
-├── awscloudwan/                  # AWS Cloud WAN resources
-├── awstransitgateway/            # AWS Transit Gateway resources
-├── awsdirectconnect/             # AWS Direct Connect resources
-├── awsnetworkfirewall/           # AWS Network Firewall resources
-├── awsroute53resolverfirewall/   # Route 53 Resolver DNS Firewall resources
-├── blogs/                        # Curated AWS Networking blog posts (Cloud WAN, newest first)
-├── workshops/                    # Hands-on AWS Workshop Studio labs
-├── otherdocs/                    # Best-practice guides and other references
-└── README.md                     # You are here
-```
-
-| Folder | What you'll find |
-|---|---|
-| [`awscloudwan`](./awscloudwan) | Core networks, segments, core network policy, service insertion and Network Function Groups |
-| [`awstransitgateway`](./awstransitgateway) | Regional hub routing, attachments, route tables, inter-region peering |
-| [`awsdirectconnect`](./awsdirectconnect) | Dedicated and hosted connections, VIF types, resiliency models |
-| [`awsnetworkfirewall`](./awsnetworkfirewall) | Stateful and stateless inspection, Suricata rules, managed threat signatures, Active Threat Defense |
-| [`awsroute53resolverfirewall`](./awsroute53resolverfirewall) | Domain allow and deny lists, DNS tunneling and DGA protection, managed domain lists |
-| [`blogs`](./blogs) | A dated list of AWS Networking & Content Delivery Blog posts about AWS Cloud WAN, from the 2021 preview to today |
-| [`workshops`](./workshops) | Self-paced labs you can run in your own AWS account |
-| [`otherdocs`](./otherdocs) | Security best-practice guides and IaC examples |
-
----
-
-## ⭐ Start here
-
-### re:Invent sessions
-- **NET331**: AWS Cloud WAN MCP Server: Transform network operations with GenAI ([slides](https://d1.awsstatic.com/onedam/marketing-channels/website/aws/en_US/events/approved/reinvent-2025/reinvent/2025/slides/net/NET331_AWS-Cloud-WAN-MCP-Server-Transform-network-operations-with-GenAI.pdf))
-- **NET401**: Deep dive into advanced routing policy with AWS Cloud WAN ([slides](https://d1.awsstatic.com/onedam/marketing-channels/website/aws/en_US/events/approved/reinvent-2025/reinvent/2025/slides/net/NET401_Deep-dive-into-advanced-routing-policy-with-AWS-Cloud-WAN.pdf))
-
-### The Betsson story
-- 📝 [How Betsson Services Limited elevated AWS hybrid connectivity to new heights with AWS Cloud WAN](https://aws.amazon.com/blogs/networking-and-content-delivery/how-betsson-services-limited-elevated-aws-hybrid-connectivity-to-new-heights-with-aws-cloud-wan/)
-
-### Security best practices
-- [AWS network security fundamentals](https://aws.github.io/aws-security-services-best-practices/guides/firewall-overview/)
-- [AWS Network Firewall best practices](https://aws.github.io/aws-security-services-best-practices/guides/network-firewall/)
-- [Route 53 Resolver DNS Firewall best practices](https://aws.github.io/aws-security-services-best-practices/guides/dns-firewall/)
-
-### Hands-on workshops
-- 🧪 [AWS Cloud WAN Workshop](https://catalog.workshops.aws/workshops/f3617759-f996-4c09-a498-9f771c3d4958/en-US)
-- 🧪 [Securing AWS network traffic: Network Firewall & DNS Firewall](https://catalog.us-east-1.prod.workshops.aws/workshops/cbfa9f18-1175-4916-b7e7-e33dbbca9f9d/en-US)
-- 🧪 [Approaches to layered security for Amazon VPC](https://catalog.us-east-1.prod.workshops.aws/workshops/04e6e6c8-c19b-40f9-8cc7-945669ca86b4/en-US)
-- 🧪 [AWS Direct Connect Resiliency Workshop](https://catalog.us-east-1.prod.workshops.aws/workshops/6bce0ae3-2ab1-4541-b014-2647b429b710/en-US)
-- 🧪 [AWS Direct Connect + Hybrid DNS Workshop](https://catalog.us-east-1.prod.workshops.aws/workshops/5a1ba4bb-e16a-4e40-9fdb-6c1925e73a73/en-US)
-
-### Infrastructure as code
-- 💻 [AWS Cloud WAN IaC examples (aws-samples)](https://github.com/aws-samples/aws-cloudwan-workshop-code)
-
----
-
-## 📬 Contact
-
-| | |
-|---|---|
-| **Kenneth Attard** | kenneth.attard@betssongroup.com · LinkedIn: `kenneth-attard` |
-| **Dimitrios Papageorgiou** | dpapageo@amazon.com · LinkedIn: `dimitriospapageorgiou` |
-
----
-
-<sub>All links point to public AWS documentation, blogs, workshops and samples. This repository is a curated reading list and does not contain official AWS guidance. Check the AWS documentation for current service features and regional availability.</sub>
+| 2026-11-18 | [Hybrid DNS with Amazon Route 53 Global Resolver for private connections on AWS Cloud WAN](https://aws.amazon.com/blogs/networking-and-content-delivery/hybrid-dns-with-amazon-route-53-global-resolver-for-private-connections-on-aws-cloud-wan/) |
+| 2026-11-16 | [Introducing 1:1 NAT on AWS Transit Gateway and AWS Cloud WAN](https://aws.amazon.com/blogs/networking-and-content-delivery/introducing-11-nat-on-aws-transit-gateway-and-aws-cloud-wan/) |
+| 2026-11-13 | [Monitoring global traffic with AWS Cloud WAN Flow Logs](https://aws.amazon.com/blogs/networking-and-content-delivery/monitoring-global-traffic-with-aws-cloud-wan-flow-logs/) |
+| 2026-10-29 | [Designing geo-segmented AWS Cloud WAN with service insertion](https://aws.amazon.com/blogs/networking-and-content-delivery/designing-geo-segmented-aws-cloud-wan-with-service-insertion/) |
+| 2026-10-26 | [Your AWS Networking and Content Delivery guide to re:Invent 2026](https://aws.amazon.com/blogs/networking-and-content-delivery/your-aws-networking-and-content-delivery-guide-to-reinvent-2026/) |
+| 2026-06-30 | [Phased AWS Transit Gateway to AWS Cloud WAN Migration with Terraform and Network MCP Server](https://aws.amazon.com/blogs/networking-and-content-delivery/phased-aws-transit-gateway-to-aws-cloud-wan-migration-with-terraform-and-network-mcp-server/) |
+| 2026-06-26 | [AWS Cloud WAN Routing Policy: Real-World Global Network Scenarios – Part 2](https://aws.amazon.com/blogs/networking-and-content-delivery/aws-cloud-wan-routing-policy-real-world-global-network-scenarios-part-2/) |
+| 2026-06-10 | [Extending SD-WAN Segmentation into AWS Cloud WAN – Part 2](https://aws.amazon.com/blogs/networking-and-content-delivery/extending-sd-wan-segmentation-into-aws-cloud-wan-part-2/) |
+| 2026-06-10 | [Extending SD-WAN Segmentation into AWS Cloud WAN – Part 1](https://aws.amazon.com/blogs/networking-and-content-delivery/extending-sd-wan-segmentation-into-aws-cloud-wan-part-1/) |
+| 2026-06-03 | [Private connectivity patterns for Amazon Bedrock AgentCore Gateway Targets](https://aws.amazon.com/blogs/networking-and-content-delivery/private-connectivity-patterns-for-amazon-bedrock-agentcore-gateway-targets/) |
+| 2026-05-04 | [Selecting the Right AWS VPN Solution: A Decision Framework](https://aws.amazon.com/blogs/networking-and-content-delivery/selecting-the-right-aws-vpn-solution-a-decision-framework/) |
+| 2026-04-21 | [Centralized ingress inspection architecture in AWS Cloud WAN](https://aws.amazon.com/blogs/networking-and-content-delivery/centralized-ingress-inspection-architecture-in-aws-cloud-wan/) |
+| 2026-03-30 | [LexisNexis Risk Solutions success story: Enhancing global connectivity with AWS Cloud WAN](https://aws.amazon.com/blogs/networking-and-content-delivery/lexisnexis-risk-solutions-success-story-enhancing-global-connectivity-with-aws-cloud-wan/) |
+| 2026-03-24 | [Building a modern network for your VMware workloads using Amazon Elastic VMware Service](https://aws.amazon.com/blogs/networking-and-content-delivery/building-a-modern-network-for-your-vmware-workloads-using-amazon-elastic-vmware-service/) |
+| 2026-03-17 | [How Betsson Services Limited elevated AWS hybrid connectivity to new heights with AWS Cloud WAN](https://aws.amazon.com/blogs/networking-and-content-delivery/how-betsson-services-limited-elevated-aws-hybrid-connectivity-to-new-heights-with-aws-cloud-wan/) |
+| 2025-12-11 | [Designing for global scale: XM Cyber’s 22-Region AWS Cloud WAN implementation](https://aws.amazon.com/blogs/networking-and-content-delivery/designing-for-global-scale-xm-cybers-22-region-aws-cloud-wan-implementation/) |
+| 2025-11-25 | [re:Invent 2025: Your ultimate AWS Networking guide to this year’s must-attend cloud event](https://aws.amazon.com/blogs/networking-and-content-delivery/aws-reinvent-2025-your-ultimate-aws-networking-guide-to-this-years-must-attend-cloud-event/) |
+| 2025-11-20 | [AWS Cloud WAN Routing Policy: Fine-grained controls for your global network (Part 1)](https://aws.amazon.com/blogs/networking-and-content-delivery/aws-cloud-wan-routing-policy-fine-grained-controls-for-your-global-network-part-1/) |
+| 2025-08-21 | [Streamlining RISE with SAP Connectivity using AWS Cloud WAN](https://aws.amazon.com/blogs/networking-and-content-delivery/streamlining-rise-with-sap-connectivity-using-aws-cloud-wan/) |
+| 2025-08-19 | [Best Buy Health’s Resilient Care Centers powered by AWS Cloud WAN and SD-WAN](https://aws.amazon.com/blogs/networking-and-content-delivery/best-buy-healths-resilient-care-centers-powered-by-aws-cloud-wan-and-sd-wan/) |
+| 2025-08-01 | [Using generative AI for building AWS networks](https://aws.amazon.com/blogs/networking-and-content-delivery/using-generative-ai-for-building-aws-networks/) |
+| 2025-07-09 | [A Lemongrass success story: Enhancing Multi-Region SD-WAN failover with AWS Cloud WAN](https://aws.amazon.com/blogs/networking-and-content-delivery/a-lemongrass-success-story-enhancing-multi-region-sd-wan-failover-with-aws-cloud-wan/) |
+| 2025-06-26 | [Addressing private IPv4 exhaustion with AWS Cloud WAN service insertion](https://aws.amazon.com/blogs/networking-and-content-delivery/addressing-private-ipv4-exhaustion-with-aws-cloud-wan-service-insertion/) |
+| 2025-06-23 | [Introducing security group referencing and enhanced DNS support for AWS Cloud WAN](https://aws.amazon.com/blogs/networking-and-content-delivery/introducing-security-group-referencing-and-enhanced-dns-support-for-aws-cloud-wan/) |
+| 2025-05-28 | [Enabling out-of-band management for third-party appliances in AWS Cloud WAN](https://aws.amazon.com/blogs/networking-and-content-delivery/enabling-out-of-band-management-for-third-party-appliances-in-aws-cloud-wan/) |
+| 2025-05-12 | [Performance and metrics enhancements for AWS Transit Gateway and AWS Cloud WAN](https://aws.amazon.com/blogs/networking-and-content-delivery/performance-and-metrics-enhancements-for-aws-transit-gateway-and-aws-cloud-wan/) |
+| 2025-05-02 | [Simplify hybrid inspection using AWS Cloud WAN service insertion](https://aws.amazon.com/blogs/networking-and-content-delivery/simplify-hybrid-inspection-using-aws-cloud-wan-service-insertion/) |
+| 2025-04-15 | [Simplifying Egress Inspection with AWS Cloud WAN Service Insertion for Greenfield Deployments](https://aws.amazon.com/blogs/networking-and-content-delivery/simplifying-egress-inspection-with-aws-cloud-wan-service-insertion-for-greenfield-deployments/) |
+| 2025-03-12 | [Building Resilient IPv6 Network with SD-WANs and AWS Cloud WAN Connect with GRE](https://aws.amazon.com/blogs/networking-and-content-delivery/building-resilient-ipv6-network-with-sd-wans-and-aws-cloud-wan-connect-with-gre/) |
+| 2024-11-25 | [Simplify global hybrid connectivity with AWS Cloud WAN and AWS Direct Connect integration](https://aws.amazon.com/blogs/networking-and-content-delivery/simplify-global-hybrid-connectivity-with-aws-cloud-wan-and-aws-direct-connect-integration/) |
+| 2024-09-24 | [Enabling global expansion and reduced operational overhead at Comcast with AWS Transit Gateway](https://aws.amazon.com/blogs/networking-and-content-delivery/enabling-global-expansion-and-reduced-operational-overhead-at-comcast-with-aws-transit-gateway/) |
+| 2024-09-11 | [Migration to AWS Cloud WAN multi-Region inspection using service insertion](https://aws.amazon.com/blogs/networking-and-content-delivery/migration-to-aws-cloud-wan-multi-region-inspection-using-service-insertion/) |
+| 2024-07-23 | [Automating the admission of virtual private clouds to AWS Cloud WAN networks](https://aws.amazon.com/blogs/networking-and-content-delivery/automating-the-admission-of-virtual-private-clouds-to-aws-cloud-wan-networks/) |
+| 2024-06-11 | [Simplify global security inspection with AWS Cloud WAN Service Insertion](https://aws.amazon.com/blogs/networking-and-content-delivery/simplify-global-security-inspection-with-aws-cloud-wan-service-insertion/) |
+| 2024-05-22 | [IPv6 deployment models for AWS Network Firewall](https://aws.amazon.com/blogs/networking-and-content-delivery/ipv6-deployment-models-for-aws-network-firewall/) |
+| 2024-04-03 | [Advanced hybrid routing scenarios with AWS Cloud WAN and AWS Direct Connect](https://aws.amazon.com/blogs/networking-and-content-delivery/advanced-hybrid-routing-scenarios-with-aws-cloud-wan-and-aws-direct-connect/) |
+| 2024-02-05 | [How to interconnect AWS Cloud WAN core networks](https://aws.amazon.com/blogs/networking-and-content-delivery/how-to-interconnect-aws-cloud-wan-core-networks/) |
+| 2023-10-24 | [Build Global SD-WANs with AWS Cloud WAN Tunnel-less Connect](https://aws.amazon.com/blogs/networking-and-content-delivery/build-global-sd-wans-with-aws-cloud-wan-tunnel-less-connect/) |
+| 2023-09-29 | [Achieve optimal routing with AWS Cloud WAN for multi-Region networks](https://aws.amazon.com/blogs/networking-and-content-delivery/achieve-optimal-routing-with-aws-cloud-wan-for-multi-region-networks/) |
+| 2023-07-18 | [Deploying hybrid networks using AWS Cloud WAN and AWS Direct Connect](https://aws.amazon.com/blogs/networking-and-content-delivery/deploying-hybrid-networks-using-aws-cloud-wan-and-aws-direct-connect/) |
+| 2023-07-14 | [Improving Performance on AWS and Hybrid Networks](https://aws.amazon.com/blogs/networking-and-content-delivery/improving-performance-on-aws-and-hybrid-networks/) |
+| 2023-07-07 | [Ataccama: Building our global network with AWS Cloud WAN](https://aws.amazon.com/blogs/networking-and-content-delivery/ataccama-building-our-global-network-with-aws-cloud-wan/) |
+| 2023-07-03 | [Segmenting hybrid networks with AWS Transit Gateway connect](https://aws.amazon.com/blogs/networking-and-content-delivery/segmenting-hybrid-networks-with-aws-transit-gateway-connect/) |
+| 2023-06-19 | [Hybrid security inspection architectures with AWS Cloud WAN and AWS Direct Connect](https://aws.amazon.com/blogs/networking-and-content-delivery/hybrid-security-inspection-architectures-with-aws-cloud-wan-and-aws-direct-connect/) |
+| 2023-04-10 | [Inspecting network traffic between Amazon VPCs with AWS Cloud WAN](https://aws.amazon.com/blogs/networking-and-content-delivery/inspecting-network-traffic-between-amazon-vpcs-with-aws-cloud-wan/) |
+| 2023-03-21 | [Centralized outbound inspection architecture in AWS Cloud WAN](https://aws.amazon.com/blogs/networking-and-content-delivery/centralized-outbound-inspection-architecture-in-aws-cloud-wan/) |
+| 2023-03-03 | [Migrating SD-WAN Appliances to AWS Transit Gateway Connect](https://aws.amazon.com/blogs/networking-and-content-delivery/migrating-sd-wan-appliances-to-aws-transit-gateway-connect/) |
+| 2022-11-22 | [Achieving traffic segmentation in multi-AWS Region environments using AWS Transit Gateway and AWS Cloud WAN](https://aws.amazon.com/blogs/networking-and-content-delivery/achieving-traffic-segmentation-in-multi-aws-region-environments-using-aws-transit-gateway-and-aws-cloud-wan/) |
+| 2022-10-04 | [Designing hyperscale Amazon VPC networks](https://aws.amazon.com/blogs/networking-and-content-delivery/designing-hyperscale-amazon-vpc-networks/) |
+| 2022-07-26 | [AWS Cloud WAN and Amazon VPC IPAM with AWS Control Tower](https://aws.amazon.com/blogs/networking-and-content-delivery/aws-cloudwan-and-amazon-ipam-with-aws-control-tower-customizations/) |
+| 2022-07-13 | [AWS Cloud WAN and AWS Transit Gateway migration and interoperability patterns](https://aws.amazon.com/blogs/networking-and-content-delivery/aws-cloud-wan-and-aws-transit-gateway-migration-and-interoperability-patterns/) |
+| 2022-03-01 | [AWS Networking and Content Delivery Recap of re:Invent 2021](https://aws.amazon.com/blogs/networking-and-content-delivery/aws-networking-and-content-delivery-recap-of-reinvent-2021/) |
+| 2021-12-02 | [Introducing AWS Cloud WAN (Preview)](https://aws.amazon.com/blogs/networking-and-content-delivery/introducing-aws-cloud-wan-preview/) |
