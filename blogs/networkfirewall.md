@@ -2,9 +2,12 @@
 
 Source: the AWS Network Firewall category pages on the AWS blogs (Networking & Content Delivery, Security, AWS News, Architecture, Public Sector, and several others).
 
-Total: 78 posts.
+Total: 81 posts.
 
+- [AWS Network Firewall introduces automated Internet firewall in public preview](https://aws.amazon.com/about-aws/whats-new/2026/11/network-firewall-automated-internet/)
+- [Amazon VPC IPAM policies now support automated internet firewall and AWS Lambda Web Functions and MicroVMs](https://aws.amazon.com/about-aws/whats-new/2026/11/vpc-ipam-policies-firewall-lambda/)
 - [AWS Network Firewall proxy and native NAT Gateway integration](https://aws.amazon.com/blogs/networking-and-content-delivery/aws-network-firewall-proxy-and-native-nat-gateway-integration/)
+- [Introducing resource context for firewall policies with AWS Transit Gateway](https://aws.amazon.com/blogs/networking-and-content-delivery/introducing-resource-context-for-firewall-policies-with-aws-transit-gateway/)
 - [Choosing the right inspection architecture for AWS Network Firewall](https://aws.amazon.com/blogs/networking-and-content-delivery/choosing-the-right-inspection-architecture-for-aws-network-firewall/)
 - [Reintroducing Network Firewall Proxy for Secure Egress Connectivity](https://aws.amazon.com/blogs/networking-and-content-delivery/reintroducing-network-firewall-proxy-for-secure-egress-connectivity/)
 - [Phased AWS Transit Gateway to AWS Cloud WAN Migration with Terraform and Network MCP Server](https://aws.amazon.com/blogs/networking-and-content-delivery/phased-aws-transit-gateway-to-aws-cloud-wan-migration-with-terraform-and-network-mcp-server/)
